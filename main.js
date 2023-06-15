@@ -3,10 +3,11 @@ import { Chart } from "chart.js/auto";
 
 document.querySelector("#app").innerHTML = `
   <div id="main">
-  <h1>Загрузите ЭКГ</h1>
+  <h1>ЭКГ-мастер</h1>
     <input id="fileinput" type="file">
     <a href="javascript:(print());" class="button-print"><button id="button">Печать</button></a>
   </div>
+  
   <div id="root">
   </div>
 `;
@@ -125,5 +126,7 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("error", (error) => {
-  alert(error.message);
+  alert(
+    `Ошибка: Неверный формат файла экг\nК сожалению, выбранный файл экг имеет неверный формат и не может быть обработан. Для решения этой проблемы пожалуйста, обратитесь к системному администратору.`
+  );
 });

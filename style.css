@@ -107,6 +107,12 @@ button:focus-visible {
   width: 70%;
 }
 
+#res {
+  position: absolute;
+  top: 200px;
+  right: 50px;
+}
+
 @media print {
   #main {
     display: none;
