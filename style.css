@@ -34,6 +34,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   align-self: start;
+  margin: 0;
 }
 
 #app {
@@ -110,7 +111,7 @@ button:focus-visible {
 #res {
   position: absolute;
   top: 200px;
-  right: 50px;
+  right: 120px;
   display: none;
 }
 
